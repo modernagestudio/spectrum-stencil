@@ -1,0 +1,31 @@
+:host {
+  display: block;
+  background: linear-gradient(180deg, #008EC5 0%, #0075AD 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: clamp(200px, 30vh, 1000px);
+  gap: 40px;
+  border-radius: 16px;
+  padding: 16px;
+  margin: 16px;
+  @media(min-width: 768px) {
+    padding: 24px;
+    margin: 24px;
+  }
+}
+
+h1 {
+  color: #fff;
+  font-size: var(--step-6);
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0;
+  text-align: center;
+}
+
+.heading-bold {
+  font-weight: 500;
+}
