@@ -10,6 +10,7 @@ export namespace Components {
     }
     interface SpButton {
         "kind": string;
+        "onButtonClick": any;
         "text": string;
     }
     interface SpHeaderBanner {
@@ -54,6 +55,7 @@ declare namespace LocalJSX {
     }
     interface SpButton {
         "kind"?: string;
+        "onButtonClick"?: any;
         "text"?: string;
     }
     interface SpHeaderBanner {

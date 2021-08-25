@@ -1,4 +1,4 @@
-:host {
+.header-banner {
   display: block;
   background: linear-gradient(180deg, #008EC5 0%, #0075AD 100%);
   display: flex;
@@ -10,11 +10,11 @@
   border-radius: 16px;
   padding: 16px;
   margin: 16px;
+
   @media(min-width: 768px) {
     padding: 24px;
     margin: 24px;
   }
-
 
 }
 

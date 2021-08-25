@@ -1,4 +1,4 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h} from '@stencil/core';
 
 @Component({
   tag: 'sp-button',
@@ -7,16 +7,17 @@ import { Component, Prop, h } from '@stencil/core';
 })
 export class SpButton {
 
-  @Prop() text:string;
-
-  @Prop() kind:string;
+  @Prop() text:string = "This is a button"
+  @Prop() kind:string = "Primary";
+  @Prop() onButtonClick;
 
   render() {
     return (
-      <a href="https://alanbrown.design" target="_blank" class={this.kind === "primary" ? "btn-primary" : "btn"}>
+      <div onClick={this.onButtonClick} class={`btn ${this.kind === "primary" ? "btn-primary" : null}`}>
         { this.text || "Alan's Button" }
-      </a>
+      </div>
     );
   }
 
 }
+

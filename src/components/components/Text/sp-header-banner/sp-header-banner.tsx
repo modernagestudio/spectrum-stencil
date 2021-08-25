@@ -1,4 +1,4 @@
-import { Component, Host, h } from '@stencil/core';
+import { Component, State, h } from '@stencil/core';
 
 @Component({
   tag: 'sp-header-banner',
@@ -6,15 +6,16 @@ import { Component, Host, h } from '@stencil/core';
   shadow: true,
 })
 export class SpHeaderBanner {
+  @State() open: boolean = false;
 
   render() {
     return (
-      <Host>
-        <h1>This is my first attempt at <span class="heading-bold">Stencil.JS</span></h1>
+      <div class="header-banner">
+        {/* {this.open ? "On" : "Off"} */}
+        <h1><span class="heading-bold">Stencil.js</span>  |  Props, State and basic Events</h1>
         <sp-button text="This is a Primary Button" kind="primary" />
         <sp-button text="Secondary Button" kind="secondary" />
-        <sp-button text="No 'Kind' Prop" />
-      </Host>
+      </div>
     );
   }
 
