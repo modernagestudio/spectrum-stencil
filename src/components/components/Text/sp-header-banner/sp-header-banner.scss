@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: clamp(200px, 30vh, 1000px);
+  min-height: clamp(200px, 30vh, 1000px);
   gap: 40px;
   border-radius: 16px;
   padding: 16px;
@@ -14,6 +14,8 @@
     padding: 24px;
     margin: 24px;
   }
+
+
 }
 
 h1 {

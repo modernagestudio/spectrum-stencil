@@ -9,6 +9,8 @@ export namespace Components {
     interface MyComponent {
     }
     interface SpButton {
+        "kind": string;
+        "text": string;
     }
     interface SpHeaderBanner {
     }
@@ -51,6 +53,8 @@ declare namespace LocalJSX {
     interface MyComponent {
     }
     interface SpButton {
+        "kind"?: string;
+        "text"?: string;
     }
     interface SpHeaderBanner {
     }

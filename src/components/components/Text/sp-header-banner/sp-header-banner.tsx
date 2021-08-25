@@ -11,7 +11,9 @@ export class SpHeaderBanner {
     return (
       <Host>
         <h1>This is my first attempt at <span class="heading-bold">Stencil.JS</span></h1>
-        <sp-button />
+        <sp-button text="This is a Primary Button" kind="primary" />
+        <sp-button text="Secondary Button" kind="secondary" />
+        <sp-button text="No 'Kind' Prop" />
       </Host>
     );
   }
